@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/pile3_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Pile3"
+        app:layout_constraintTop_toBottomOf="@+id/pile2_edittext"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <EditText
+        android:id="@+id/pile4_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Pile4"
+        app:layout_constraintTop_toBottomOf="@+id/pile3_edittext"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <EditText
+        android:id="@+id/pile2_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Pile2"
+        app:layout_constraintTop_toBottomOf="@+id/pile1_edittext"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <EditText
+        android:id="@+id/pile1_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Pile1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <EditText
+        android:id="@+id/nedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Which Pile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pile4_edittext" />
+
+    <EditText
+        android:id="@+id/redittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="how many?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nedittext" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="217dp"
+        android:text="pc move"
+        app:layout_constraintBottom_toTopOf="@+id/start_game_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redittext" />
+
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="Start Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="122dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
